@@ -29,12 +29,14 @@
         <a type="button" class="btn btn-link" href="{{ url_for('sign') }}">Sign the Guest Book</a>
       </div>
 
+      {% for r in results %}
       <div class="page-header">
-        <h1>{{ author }}</h1>
+        <h1>{{ r.author }}</h1>
       </div>
       <div class="well">
-        <p>{{ content }}</p>
+        <p>{{ r.content }}</p>
       </div>
+      {% endfor %}
 
     </div> <!-- /container -->
 
