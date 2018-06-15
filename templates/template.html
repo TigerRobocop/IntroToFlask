@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Example Template</title>
+    </head>
+    <body>
+        <h1>This is the example template :)</h1>
+        {% if my_var %}
+        <h1>argument passed: {{ my_var }}</h1>
+        {% else %}
+        <h1>no arguments</h1>
+        {% endif %}
+        
+        <p>Soufflé fruitcake dragée cotton candy chocolate bar. Bonbon icing dragée biscuit gingerbread. Apple pie ice cream oat cake. Marshmallow donut chocolate gummies. Macaroon brownie cotton candy. Sesame snaps apple pie topping gingerbread tart marshmallow cake. Powder marzipan wafer apple pie gingerbread cupcake. Toffee pastry sesame snaps jujubes icing jelly beans sweet roll liquorice. Powder candy candy canes chupa chups biscuit apple pie. Bonbon liquorice oat cake candy cake. Biscuit topping donut biscuit donut biscuit chocolate jujubes cheesecake. Cake liquorice cake lollipop jujubes lollipop bear claw oat cake. Pastry pastry soufflé cake croissant. Jelly sugar plum cake cake candy gummi bears marshmallow pudding.</p>
+
+        {% for link in links %}
+        <p><a href="{{ link.url }}" target="_blank">{{link.text}}</a></p>
+        {% endfor %}
+
+        <!-- <p><a href="www.google.com">Google</a></p> -->
+    </body>
+</html>
